@@ -13,6 +13,7 @@
 
 int main(int argc, char **argv) {
 
+while(1){
   double a, b, result;
   int choice;
 
@@ -41,17 +42,23 @@ int main(int argc, char **argv) {
   } else if(choice == 4) {
     printf("%f",a/b);
   } else if(choice == 5) {
-    if(a<b){
-      printf("%f",a);
-    } else{
-      printf("%f",b);
-    }
+    result=(a<b)? a:b;
+    printf("min=%f\n",result);
   } else if(choice == 6) {
     result=log(b)/log(a);
     printf("loga(b)= %f\n",result);
   } else {
     printf("Please input a valid operator next time");
   }
+  char Choice;
+  printf("You want to quite program......\n");
+  scanf(" %c",&Choice);
+  if(Choice=='y' || Choice=='Y'){
+    break;
+  }
+  printf("____________________________\n");
+
+}
 
   return 0;
 }
