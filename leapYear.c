@@ -61,6 +61,36 @@ int main(int argc, char **argv) {
 
   //TODO: write *at least* 3 more of your own
   //      test cases here, they should all pass!
+  year=80;
+  printf("Test Case 4: year = %d  : ", year);
+  if(!isLeapYear(year)) {
+    printf("FAILED!\n");
+    numFailed = numFailed + 1;
+  } else {
+    printf("PASSED!\n");
+    numPassed = numPassed + 1;
+  }
+
+  year=1200;
+  printf("Test Case 5: year = %d: ", year);
+  if(!isLeapYear(year)) {
+    printf("FAILED!\n");
+    numFailed = numFailed + 1;
+  } else {
+    printf("PASSED!\n");
+    numPassed = numPassed + 1;
+  }
+
+  year=1300;
+
+  printf("Test Case 6: year = %d: ", year);
+  if(isLeapYear(year)) {
+    printf("FAILED!\n");
+    numFailed = numFailed + 1;
+  } else {
+    printf("PASSED!\n");
+    numPassed = numPassed + 1;
+  }
 
   printf("\n\n");
   printf("Summary:\n");
