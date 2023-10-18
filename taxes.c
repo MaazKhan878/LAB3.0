@@ -64,6 +64,9 @@ int main(int argc, char **argv) {
     tax=168933.50+0.37*(agi-628300);
     childCredit=numChildren*2000;
     totalTax=tax-childCredit;
+  } 
+  if(totalTax<0){
+    totalTax=0;
   }
 
   printf("AGI:          $%10.2f\n", agi);
