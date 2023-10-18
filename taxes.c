@@ -39,6 +39,11 @@ int main(int argc, char **argv) {
     tax=1990+0.12*(agi-19900);
     childCredit=numChildren*2000;
     totalTax=tax-childCredit;
+  } else if(agi>=81051 && agi<=172750){
+    agi;
+    tax=9328+0.22*(agi-81050);
+    childCredit=numChildren*2000;
+    totalTax=tax-childCredit;
   }
 
   printf("AGI:          $%10.2f\n", agi);
